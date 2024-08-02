@@ -1,0 +1,39 @@
+﻿@page
+@model Pedestal.Pages.IndexModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Seleccionar Sede</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="~/images/LOGO ORIGINAL.png" alt="Logo" />
+        </div>
+        <div class="welcome-text">
+            <h1>Bienvenido a Logifarma</h1>
+            <p>Por favor, elija la sede en la que se encuentra</p>
+        </div>
+        <form method="post">
+            <div class="form-group">
+                <label for="sede">Sede:</label>
+                <select id="sede" name="sede">
+                    <option value="100">Sede 100</option>
+                    <option value="200">Sede 200</option>
+                    <option value="300">Sede 300</option>
+                    <option value="400">Sede 400</option>
+                    <option value="500">Sede 500</option>
+                    <option value="600">Sede 600</option>
+                    <option value="820">Sede 820</option>
+                    <option value="900">Sede 900</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <button type="submit">Continuar</button>
+        </form>
+    </div>
+</body>
+</html>

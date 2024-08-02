@@ -1,0 +1,35 @@
+﻿@page
+@model Pedestal.Pages.TurnoModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Seleccionar Turno</title>
+    <link rel="stylesheet" href="~/css/turno.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="~/images/LOGO ORIGINAL.png" alt="Logo Logifarma" />
+        </div>
+        <div class="welcome-text">
+            <h1>Bienvenido a Logifarma</h1>
+            <p>Por favor tome su turno</p>
+        </div>
+        <div class="button-group">
+            <form method="post">
+                <button type="submit" name="turno" value="general" class="turno-button">General</button>
+                <button type="submit" name="turno" value="preferencial" class="turno-button">Preferencial</button>
+                <button type="submit" name="turno" value="pendientes" class="turno-button">Pendientes</button>
+                <button type="submit" name="turno" value="magisterio" class="turno-button">Magisterio</button>
+            </form>
+        </div>
+        <div id="confirmation-message" class="confirmation-message">
+            <p>@Model.MensajeConfirmacion</p>
+        </div>
+    </div>
+
+    <script src="~/js/Turno.js"></script>
+</body>
+</html>
